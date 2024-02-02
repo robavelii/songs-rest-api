@@ -1,0 +1,28 @@
+{
+  "name": "songs-api",
+  "version": "1.0.0",
+  "description": "A rest api to manage information of songs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robavelii/songs-rest-api.git"
+  },
+  "author": "Robel Fekadu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robavelii/songs-rest-api/issues"
+  },
+  "homepage": "https://github.com/robavelii/songs-rest-api#readme",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.11.16",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
