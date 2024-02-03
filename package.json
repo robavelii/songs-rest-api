@@ -4,8 +4,8 @@
   "description": "A rest api to manage information of songs",
   "main": "server.js",
   "scripts": {
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/server.js",
     "start:dev": "nodemon",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
@@ -21,16 +21,22 @@
   },
   "homepage": "https://github.com/robavelii/songs-rest-api#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "express-rate-limit": "^7.1.5",
     "helmet": "^7.1.0",
     "joi": "^17.12.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1",
     "winston": "^3.11.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.6",
     "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^20.11.16",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
@@ -42,3 +48,4 @@
     "typescript": "^5.3.3"
   }
 }
+
